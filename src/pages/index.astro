@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Baner from '../components/Baner.astro';
+import Card from '../components/Card.astro';
+import About from '../components/About.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <Baner />
+    <About />
+    <h2>Work</h2>
+    <Card
+      href="/about"
+      title="ForumX"
+      body="Desarrollar App de recetas que te permite ordenar y filtrar los datos traídos de una API y de una base de datos local también permite crear recetas propias y mostrar en detalle las mismas."
+    />
+    <Card
+      href=""
+      title="ForumX"
+      body="Desarrollar App de recetas que te permite ordenar y filtrar los datos traídos de una API y de una base de datos local también permite crear recetas propias y mostrar en detalle las mismas."
+    />
+  </main>
+</Layout>
+
+<style is:global>
+  :root {
+    font-family: 'VerilySerifMono';
+    /* font-weight: ; */
+    font-size: 16px;
+  }
+
+  @font-face {
+    /* font-family: 'SLC_';
+    src: url('/fonts/SLC_.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap; */
+    font-family: 'VerilySerifMono';
+    src: url('/fonts/VerilySerifMono.otf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+  }
+
+  main {
+    margin: auto;
+    padding: 4rem;
+    width: 700px;
+    max-width: calc(100% - 2rem);
+    color: white;
+  }
+</style>

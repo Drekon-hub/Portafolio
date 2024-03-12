@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title='404 Not found'>
+    <div class="container">
+        <h1>
+            Esta pagina no existe...
+        </h1>
+        <img src="https://midu.dev/images/this-is-fine-404.gif"/>
+    </div>
+</Layout>
+
+
+<style>
+    .container {
+      display: flex;
+      flex-direction: column; /* Alinear elementos verticalmente */
+      align-items: center; /* Centrar horizontalmente */
+      text-align: center; /* Alinear el texto en el centro */
+      color: white; /* Hacer que el texto sea blanco */
+    }
+  
+    h1 {
+      margin-top: 20px; /* Espacio superior para el texto */
+    }
+  
+    img {
+      margin-top: 20px; /* Espacio superior para la imagen */
+      max-width: 100%; /* Asegurar que la imagen no desborde el contenedor */
+    }
+  </style>

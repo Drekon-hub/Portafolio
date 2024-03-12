@@ -1,0 +1,44 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<div class="container">
+  <a href={href}>
+    <h4>
+      {title}
+    </h4>
+  </a>
+  <p>
+    {body}
+  </p>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    max-width: 800px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    /* font-size: 14px; */
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0 0 0 10px;
+    word-wrap: break-word;
+  }
+</style>
