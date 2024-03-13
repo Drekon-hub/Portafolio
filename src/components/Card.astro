@@ -10,7 +10,7 @@ const { href, title, body } = Astro.props;
 
 <div class="container">
   <a href={href}>
-    <h4>
+    <h4 class="underline">
       {title}
     </h4>
   </a>
@@ -36,7 +36,24 @@ const { href, title, body } = Astro.props;
   h4 {
     margin: 0;
   }
+  .underline {
+    position: relative;
+    display: inline-block;
+  }
 
+  .underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Ajusta la distancia entre el texto y el subrayado */
+    width: 100%;
+    height: 1px; /* Ajusta el grosor del subrayado */
+    background-color: rgb(
+      255,
+      255,
+      255
+    ); /* Cambia el color del subrayado según tu preferencia */
+  }
   p {
     margin: 0 0 0 10px;
     word-wrap: break-word;

@@ -3,41 +3,36 @@ import Layout from '../layouts/Layout.astro';
 import Baner from '../components/Baner.astro';
 import Card from '../components/Card.astro';
 import About from '../components/About.astro';
-import Contact from '../components/Contact.astro';
+import Technology from '../components/Technology.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Yayodev.">
   <main>
     <Baner />
     <About />
     <h2>Work</h2>
     <Card
-      href="/about"
-      title="ForumX"
-      body="Desarrollar App de recetas que te permite ordenar y filtrar los datos traídos de una API y de una base de datos local también permite crear recetas propias y mostrar en detalle las mismas."
+      href="https://dogs-md99uxq9v-drekon-hub.vercel.app/"
+      title="GAME MACH"
+      body="Proyecto Individual Henry Bootcamp Desarrollar App de perros que te permite ordenar y filtrar los datos traídos de una API y de una base de datos local también permite crear razas propias y mostrar en detalle las mismas."
     />
     <Card
-      href=""
-      title="ForumX"
-      body="Desarrollar App de recetas que te permite ordenar y filtrar los datos traídos de una API y de una base de datos local también permite crear recetas propias y mostrar en detalle las mismas."
+      href="https://www.youtube.com/watch?v=bdFyQGHnN-E"
+      title="DOG-API"
+      body="El objetivo era hacer una aplicación móvil funcional en la que pudieras registrarte, acceder y encontrar a tu compañero de juego ideal. Añadimos un canal de chat para que puedas hablar con la persona con la que has hecho match y coordinar cuándo jugar. También puedes editar tu perfil, ver el perfil de otros usuarios, puntuarlos según tu experiencia de juego con ellos y mucho más. Si quieres ver el resto de funciones, pruébalo."
     />
 
-    <Contact/>
+    <!-- <Technology /> -->
   </main>
 </Layout>
 
 <style is:global>
   :root {
     font-family: 'VerilySerifMono';
-    /* font-weight: ; */
     font-size: 16px;
   }
 
   @font-face {
-    /* font-family: 'SLC_';
-    src: url('/fonts/SLC_.ttf') format('truetype');
-    font-style: normal;
-    font-display: swap; */
     font-family: 'VerilySerifMono';
     src: url('/fonts/VerilySerifMono.otf') format('truetype');
     font-style: normal;
